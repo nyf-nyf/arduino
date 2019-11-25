@@ -47,7 +47,7 @@ void loop() {
                 digitalWrite(PIN_ALARM, HIGH);
             }
         }
-        else if (temp[0] >= NORMAL_TEMP  {
+        else if (temp >= NORMAL_TEMP  {
             if (IN_ALARM_MODE == true) {
                 IN_ALARM_MODE = false;
                 digitalWrite(PIN_ALARM, LOW);
