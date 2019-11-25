@@ -38,7 +38,7 @@ void setup() {
 void loop() {
     if (sensors.getDS18Count() != 0) {
         sensors.requestTemperatures();
-        float temp = ds.getTempC(sensor);
+        temp = ds.getTempC(sensor);
         display.showNumberDecEx(int(temp), 0b00000000, false);
 
         if (temp <= CRITICAL_TEMP) {
